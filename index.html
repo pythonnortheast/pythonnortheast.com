@@ -1,3 +1,21 @@
+---
+---
+{% include header.html %}
+
+<div class="next-event box">
+	<div class="box-header">
+		<h2>Next Event</h2>
+	</div>
+	{% assign post = site.posts.first %}
+	<p>{{ post.title }}</p>
+</div>
+<iframe style="width: 100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-1.6190028190612793%2C54.96868467876528%2C-1.5956139564514162%2C54.97731812204523&amp;layer=hot&amp;marker=54.9727014313149%2C-1.6085422039031982" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=54.9730&amp;mlon=-1.6073#map=16/54.9730/-1.6073;layers=H">View Larger Map</a></small>
+{% for post in site.posts %}
+<li>
+  <a href="{{ post.url }}">{{ post.title }}</a>
+</li>
+{% endfor %}
+
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
