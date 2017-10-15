@@ -1,0 +1,98 @@
+---
+---
+body, html{
+    padding: 0px;
+    margin: 0px;
+}
+h1, h2, h3, h3, h4, .header{
+    font-family: 'Ropa Sans', sans-serif;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    margin: 0 auto;
+    max-width: 600px;
+}
+.header-container {
+    padding: 20px;
+    text-align: center;
+    background: url('background.jpg') no-repeat;
+    position: relative;
+    z-index: 9;
+    background-size: cover;
+    color: #FFF;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+}
+.header h1{
+    font-size: 40pt;
+    margin-bottom: 5px;
+}
+
+.about-box, .next-event{
+    text-align: center;
+    font-size: 21px;
+    line-height: 1.4em;
+    padding: 40px 0px;
+    h2{
+        line-height: 1.4em;
+    }
+}
+.next-event{
+    background: #920d1d;
+    color: #FFF;
+    .button{
+        border-radius: 10px;
+        padding: 10px;
+        color: #FFF;
+        &:hover{
+            background: #a73d4a;
+        }
+    }
+}
+
+.map-box{
+    display: flex;
+    iframe{
+        width: 75%;
+    }
+    .details{
+        width: 25%;
+        background: #F3E3E0;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        h2{
+            font-size: 30px;
+        }
+        address{
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1.4em;
+        }
+    }
+}
+
+.subs-header-content, .subs-header-bg {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 60px;
+}
+.subs-header-bg{
+    background: #001f3f;
+    z-index: 2;
+}
+.subs-header-content{
+    z-index: 10;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    a{
+        color: #FFF;
+    }
+}
