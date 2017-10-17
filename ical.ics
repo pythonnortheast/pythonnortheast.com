@@ -1,0 +1,22 @@
+---
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//PythonNorthEast//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+{% for post in site.posts limit:10 %}
+BEGIN:VEVENT
+SUMMARY:{{ post.title }}
+UID:{{ post.url }}
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+DTSTART:{{ post.date | date:"%Y%m%d" }}{{ site.data.site.start_time }}
+DTEND:{{ post.date | date:"%Y%m%d" }}{{ site.data.site.end_time }}
+LOCATION:{% for address in site.data.site.address %}{{ address }} {% endfor %}
+DESCRIPTION:{{ post.excerpt | strip_html }}
+URL:{{ site.data.site.domain }}{{ post.url }}
+END:VEVENT
+{% endfor %}
+END:VCALENDAR

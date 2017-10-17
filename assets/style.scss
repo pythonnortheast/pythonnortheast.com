@@ -13,6 +13,9 @@ body{
 .container{
     margin: 0 auto;
     max-width: 600px;
+    &.event{
+        padding: 30px 0;
+    }
 }
 .header-container {
     padding: 20px;
@@ -47,13 +50,28 @@ body{
     background: #920d1d;
     color: #FFF;
     .button{
-        border-radius: 10px;
-        padding: 10px;
         color: #FFF;
         &:hover{
             background: #a73d4a;
         }
     }
+}
+
+.event-ticket-bar{
+    margin-top: 30px;
+}
+
+.button{
+    border-radius: 10px;
+    padding: 10px;
+    color: #920d1d;
+    &:hover{
+        background: #a73d4a;
+        color: #FFF;
+    }
+}
+.center{
+    text-align: center;
 }
 
 .map-box{
@@ -78,10 +96,42 @@ body{
     }
 }
 
+.sign-up-footer{
+    background: #001f3f;
+    color: #FFF;
+    padding: 20px;
+    label, input{
+        margin-bottom: 10px;
+        display: block;
+    }
+    input[type=email]{
+        padding: 3px;
+        width: 100%;
+        font-size: 25px;
+    }
+    #mc-embedded-subscribe{
+        padding: 10px;
+        background: #00366d;
+        border-radius: 10px;
+        border-width: 0px;
+        outline: none;
+        color: #FFF;
+        font-size: 20px;
+        &:hover{
+            background: #0055aa;
+        }
+    }
+}
+
 .subs-header-content, .subs-header-bg {
     position: fixed;
     top: 0; left: 0; right: 0;
-    height: 60px;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    a{
+        color: #FFF;
+    }
 }
 .subs-header-bg{
     background: #001f3f;
@@ -89,10 +139,32 @@ body{
 }
 .subs-header-content{
     z-index: 10;
-    color: #FFF;
-    padding: 20px;
-    text-align: center;
-    a{
-        color: #FFF;
+}
+
+.small-header{
+    position: relative;
+    z-index: 10;
+    background: #001f3f;
+    padding-bottom: 10px;
+    img{
+        max-width: 100px;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        a{
+            margin-right: 20px;
+            color: #EEE;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 14px;
+            &:hover{
+                color: #FFF;
+                text-decoration: underline;
+            }
+            &.logo{
+                margin-right: 40px;
+            }
+        }
     }
 }

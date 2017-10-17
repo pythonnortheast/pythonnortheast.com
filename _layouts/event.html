@@ -1,1 +1,16 @@
-Helo
+{% include header.html %}
+
+{% include subheader.html %}
+
+<div class="container event">
+    <h2>{{ page.title }}</h2>
+    <h3>{{ page.date | date:"%-d %b %Y" }}</h3>
+    {{ page.content }}
+    {% if page.link %}
+    <p class="center event-ticket-bar">
+        <a class="button" href="{{ page.link }}">Get Tickets</a>
+    </p>
+    {% endif %}
+</div>
+
+{% include footer.html %}
