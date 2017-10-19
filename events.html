@@ -9,7 +9,7 @@
 <h3>{{ post.title }}</h3>
 <p>{{ post.date | date:"%-d %b %Y" }}</p>
 <p>
-    <a href="{{ post.url }}">More Details</a>
+    <a href="{{ post.url | relative_url }}">More Details</a>
 </p>
 {% endfor %}
 
