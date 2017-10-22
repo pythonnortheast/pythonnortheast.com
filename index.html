@@ -34,6 +34,12 @@
 	</div>
 </div>
 
+<div class="container mobile-only">
+	<a class="map-link" target="_blank" href="https://maps.google.com/?daddr={{ site.data.site.address | join:"," }}">
+		<img src="{{ "/assets/map.png" | relative_url }}" class="map-img" />
+		<p>Tapping map opens Google Maps</p>
+	</a>
+</div>
 <div class="map-box">
 	{% include map.html %}
 	<div class="details">
@@ -42,6 +48,10 @@
 			<address>{{ site.data.site.address | join:"<br/>" }}</address>
 		</div>
 	</div>
+</div>
+
+<div class="container">
+
 </div>
 
 {% include footer.html %}

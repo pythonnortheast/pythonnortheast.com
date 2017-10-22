@@ -12,4 +12,5 @@ address:
   - NE1 6UF
 domain: http://pythonnortheast.com
 start_time: 1800
-end_date: 2000
+end_time: 2000
+event_email: events@pythonnortheast.co.uk
