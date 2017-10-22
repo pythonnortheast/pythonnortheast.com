@@ -42,4 +42,30 @@
 <!--End mc_embed_signup-->
 </div></div>
 
+<div class="sponsors">
+    <div class="container">
+        <h2>Thanks to our sponsors for keeping Python North East running</h2>
+        <div class="list">
+            {% for sponsor in site.data.sponsors %}
+            <a target="_blank" href="{{ sponsor.link }}">
+                <img src="{{ sponsor.logo | relative_url }}" title="{{ sponsor.name }}" />
+                <strong>{{ sponsor.name }}</strong>
+                {{ sponsor.description }}
+            </a>
+            {% endfor %}        
+        </div>
+    </div>
+</div>
+
+<div class="ending">
+    <div class="container">
+        Need to get in touch with us?
+        <a href="{{ site.data.site.twitter }}" class="link">Send us a message on Twitter</a>
+        <br/>
+        <a href="https://pixabay.com/en/panorama-newcastle-upon-tyne-river-1327017/">Image on homepage by skeeze</a>
+        <br/>
+        <a href="//jsimpson.me">Site designed by Joe</a>
+    </div>
+</div>
+
 </body></html>

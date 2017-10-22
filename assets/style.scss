@@ -232,3 +232,60 @@ img{
     padding: 20px;
     background: #EEE;
 }
+
+.sponsors{
+    background: #333;
+    color: #FFF;
+    padding: 20px;
+    .list{
+        display: flex;
+        flex-wrap: 1;
+        a{
+            width: 33%;
+            padding: 10px;
+            text-decoration: none;
+            color: #FFF;
+            img{
+                max-height: 40px;
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 10px;
+            }
+            strong{
+                display: block;
+                margin-bottom: 10px;
+            }
+            &:hover{
+                background: #222;
+            }
+        }
+    }
+}
+@media(max-width: 600px){
+    .sponsors .list{
+        display: block;
+        a{
+            display: block;
+            width: 100%;
+            padding: 0px;
+            padding-top: 15px;
+            margin-top: 15px;
+            border-top: 1px solid #EEE;
+            &:first-of-type{
+                border-top-width: 0px;
+            }
+        }
+    }
+}
+
+.ending{
+    padding: 20px;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    line-height: 2.1em;
+    a{
+        color: #FFF;
+    }
+}
+
