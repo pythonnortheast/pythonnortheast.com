@@ -234,8 +234,6 @@ img{
 }
 
 .sponsors{
-    background: #333;
-    color: #FFF;
     padding: 20px;
     .list{
         display: flex;
@@ -244,7 +242,7 @@ img{
             width: 33%;
             padding: 10px;
             text-decoration: none;
-            color: #FFF;
+            color: #000;
             img{
                 max-height: 40px;
                 display: block;
@@ -256,7 +254,7 @@ img{
                 margin-bottom: 10px;
             }
             &:hover{
-                background: #222;
+                background: #EEE;
             }
         }
     }
