@@ -1,15 +1,20 @@
-# pythonnortheast.com
+# Python North East Website
 
-The Python North East website on the new .com domain
+The Python North East [website](https://www.pythonnortheast.com) on the new .com
+domain.
 
 ## Adding Events
 
 To add a new event, add a new Markdown document to the `_posts` directory
 with a filename following this format:
 
-```
+```bash
 <Year>-<Month>-<Day>-slug.md
+```
+
 for example:
+
+```bash
 2017-09-13-zeromq.md
 ```
 
