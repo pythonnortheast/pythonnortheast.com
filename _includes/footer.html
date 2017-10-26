@@ -1,0 +1,71 @@
+<script
+    type="text/javascript"
+    src="{{ "/assets/page.js" | relative_url }}">
+</script>
+
+<a name="subscribe" id="subscribe"></a>
+<div class="sign-up-footer">
+<div class="container">
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="//pythonnortheast.us16.list-manage.com/subscribe/post?u=55430c25668eab2c29588d2eb&amp;id=b3f543f40c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+    <h2>Be the first to find out about the next Python North East event</h2>
+    <div class="people-row">
+        <div class="mc-field-group">
+            <label for="mce-FNAME">First Name </label>
+            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+        </div>
+        <div class="mc-field-group">
+            <label for="mce-LNAME">Last Name </label>
+            <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+        </div>
+    </div>
+
+    <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+    </label>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+    </div>
+
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+    </div>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_55430c25668eab2c29588d2eb_b3f543f40c" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+</div></div>
+
+<div class="sponsors">
+    <div class="container">
+        <h2>Thanks to our sponsors for keeping Python North East running</h2>
+        <div class="list">
+            {% for sponsor in site.data.sponsors %}
+            <a target="_blank" href="{{ sponsor.link }}">
+                <img src="{{ sponsor.logo | relative_url }}" title="{{ sponsor.name }}" />
+                <strong>{{ sponsor.name }}</strong>
+                {{ sponsor.description }}
+            </a>
+            {% endfor %}        
+        </div>
+    </div>
+</div>
+
+<div class="ending">
+    <div class="container">
+        Need to get in touch with us?
+        <a href="{{ site.data.site.twitter }}" class="link">Send us a message on Twitter</a>
+        <br/>
+        <a href="https://pixabay.com/en/panorama-newcastle-upon-tyne-river-1327017/">Image on homepage by skeeze</a>
+        <br/>
+        <a href="//jsimpson.me">Site designed by Joe</a>
+    </div>
+</div>
+
+</body></html>

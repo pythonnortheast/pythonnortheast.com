@@ -1,0 +1,20 @@
+---
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//PythonNorthEast//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+{% for post in site.posts limit:10 %}BEGIN:VEVENT
+UID:{{ post.date | date: "%Y%m%d" }}@pythonnortheast.com
+ORGANIZER;CN="Python North East":MAILTO:{{ site.data.site.event_email }}
+SUMMARY:{{ post.title }}
+CLASS:PUBLIC
+DTSTART:{{ post.date | date: "%Y%m%d" }}T{{ site.data.site.start_time }}00Z
+DTEND:{{ post.date | date: "%Y%m%d" }}T{{ site.data.site.end_time }}00Z
+DTSTAMP:{{ post.date | date: "%Y%m%d" }}T{{ site.data.site.start_time }}00Z
+LOCATION:{{ site.data.site.address | join:", " }}
+DESCRIPTION:{{ post.excerpt | strip_html | replace: "\n", " " | strip_newlines }}
+URL:{{ post.url | absolute_url }}
+END:VEVENT{% endfor %}
+END:VCALENDAR
