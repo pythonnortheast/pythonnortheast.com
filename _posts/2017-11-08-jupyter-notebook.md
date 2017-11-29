@@ -3,7 +3,7 @@ layout: event
 title: Juptyer Notebook
 link: https://attending.io/events/jupyter-notebook
 ---
-TJupyter Notebook is an interactive computational environment that evolved from
+Jupyter Notebook is an interactive computational environment that evolved from
 IPython, it is becoming more popular every year among people for things like data
 science, teaching, tutorials and more! Rob McCluskey is here to tell you why you
 should be using it more in your every day coding, and will give plenty of tips
