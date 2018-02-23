@@ -1,6 +1,4 @@
----
----
-body,
+--- --- body,
 html {
   padding: 0px;
   margin: 0px;
@@ -145,6 +143,9 @@ body {
   input {
     margin-bottom: 10px;
     display: block;
+  }
+  .button {
+    margin: 0 0 10px 0;
   }
   input[type="email"],
   input[type="text"] {
