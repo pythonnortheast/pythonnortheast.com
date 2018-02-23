@@ -26,11 +26,12 @@ layout: event
 title: Build Interconnecting Apps with ZeroMQ
 link: https://attending.io/events/zeromq-python
 ---
+
 This is a description of the event. The first paragraph will be used as an
 excerpt.
 ```
 
-To add an image the following syntax is reconmended:
+To add an image, use the following syntax:
 
 ```markdown
 [Link to a page]({{ site.baseurl }}{% link /assets/logo.png %})
