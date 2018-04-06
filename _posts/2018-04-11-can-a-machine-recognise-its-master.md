@@ -15,4 +15,4 @@ As always, we'll be in Campus North from 6pm. Pizza is supplied courtesy of
 [Pebble](https://www.mypebble.co.uk) and
 [Sharpe Recruitment](http://www.sharperecruitment).
 
-Looking forward to seeing you there!
+We're looking forward to seeing you there!
