@@ -20,6 +20,9 @@ the end, so bring your own laptop.
 Python beginners are welcome. If you don't feel comfortable on your own,
 there will be several more experienced people who you can team up with.
 
+As always, [Sharpe Recuitment](http://www.sharperecruitment.co.uk) and
+[Pebble](https://www.mypebble.co.uk) will be sponsoring the pizza!
+
 Please bring your laptop and get yourself setup with Python and Java:
 
 * Python 3 - for bots
