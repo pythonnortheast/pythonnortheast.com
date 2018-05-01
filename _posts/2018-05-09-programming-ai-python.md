@@ -5,17 +5,16 @@ link: https://attending.io/events/programming-ai-in-python
 ---
 
 This month, Paweł Widera is running a tutorial on Artificial Intelligence in games.
-We will learn how to write our own intelligent bot that will kick our backsides
-at games :P
+We will learn how to write our own intelligent bot that will kick our backsides :P
 
 To keep things simple, we'll be targeting a particular variant of classic 2-player
-pen and pencil games. The rules may be simple but the gameplay is pretty exciting!
+pen and pencil game. The rules may be simple but the gameplay is pretty exciting!
 
 The tutorial will introduce several heuristic search algorithms typically
 used in game play, starting with a random search and greedy optimisation,
-through MinMax and its variants, to the Monte Carlo searching. There
-will be several demo programs to play with, and an open competition at
-the end, so bring your own laptop.
+through MiniMax and its variants, to the Monte Carlo search tree. We'll have
+several demo programs to play with and a competition at the end, so bring your
+laptop!
 
 Python beginners are welcome. If you don't feel comfortable on your own,
 there will be several more experienced people who you can team up with.
