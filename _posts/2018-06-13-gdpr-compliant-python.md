@@ -5,8 +5,8 @@ link: https://attending.io/events/gdpr-compliant-python
 ---
 
 The 25th May deadline for GDPR may have passed but the work to remain compliant
-is ongoing. With this in mind, we've brought you something topical for 12th
-June's event.
+is ongoing. With this in mind, we've brought you something topical for June's
+event.
 
 The GDPR isn't just a chance to write word documents - programming chops can
 also help out. Jamie from [SoPost](https://www.sopost.com/) will show how a
