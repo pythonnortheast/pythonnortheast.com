@@ -1,0 +1,14 @@
+mailchimp:
+  fields:
+    first_name:
+      name: FNAME
+      id: mce-FNAME
+    last_name:
+      name: LNAME
+      id: mce-LNAME
+    email:
+      name: EMAIL
+      id: mce-EMAIL
+    potential_speaker:
+      name: group[4861][1]
+      id: mce-SPEAKER

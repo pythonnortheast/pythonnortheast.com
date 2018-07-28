@@ -1,5 +1,6 @@
 ---
 ---
+/** Global Styles */
 body,
 html {
   padding: 0px;
@@ -23,6 +24,32 @@ body {
     padding: 30px 15px;
   }
 }
+.list-unstyled {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.button {
+  border-radius: 10px;
+  padding: 10px;
+  color: #920d1d;
+  &:hover {
+    background: #a73d4a;
+    color: #fff;
+  }
+  &:first-child {
+    margin-left: -10px;
+  }
+}
+.center {
+  text-align: center;
+}
+
+label input[type="checkbox"] {
+  display: inline;
+}
+/** End Global Styles */
+
 .header-container {
   padding: 20px;
   text-align: center;
@@ -69,22 +96,6 @@ body {
 
 .event-ticket-bar {
   margin-top: 30px;
-}
-
-.button {
-  border-radius: 10px;
-  padding: 10px;
-  color: #920d1d;
-  &:hover {
-    background: #a73d4a;
-    color: #fff;
-  }
-  &:first-child {
-    margin-left: -10px;
-  }
-}
-.center {
-  text-align: center;
 }
 
 .map-box {
@@ -177,6 +188,17 @@ body {
       background: #0055aa;
     }
   }
+
+  .mce_inline_error {
+    padding: 10px !important;
+    width: 100.4%;
+  }
+
+  #mce-responses {
+    .response {
+      padding: 20px 0;
+    }
+  }
 }
 
 .subs-header-content,
@@ -257,6 +279,9 @@ img {
 
 .sponsors {
   padding: 20px;
+  h2 {
+    padding: 10px;
+  }
   .list {
     display: flex;
     flex-wrap: 1;

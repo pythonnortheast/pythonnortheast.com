@@ -8,24 +8,48 @@ src="{{ "/assets/page.js" | relative_url }}">
   <div class="container">
     <!-- Begin MailChimp Signup Form -->
     <div id="mc_embed_signup">
-      <form action="//pythonnortheast.us16.list-manage.com/subscribe/post?u=55430c25668eab2c29588d2eb&amp;id=b3f543f40c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <form action="//pythonnortheast.us16.list-manage.com/subscribe/post?u=55430c25668eab2c29588d2eb&amp;id=b3f543f40c"
+        method="post"
+        id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+        class="validate" target="_blank"
+        novalidate>
+
         <div id="mc_embed_signup_scroll">
           <h2>Be the first to find out about the next Python North East event</h2>
           <div class="people-row">
             <div class="mc-field-group">
-              <label for="mce-FNAME">First Name </label>
-              <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+              <label for="{{ site.data.forms.mailchimp.fields.first_name.id }}">First Name</label>
+              <input type="text" value=""
+                name="{{ site.data.forms.mailchimp.fields.first_name.name }}"
+                class="" id="{{ site.data.forms.mailchimp.fields.first_name.id }}">
             </div>
             <div class="mc-field-group">
-              <label for="mce-LNAME">Last Name </label>
-              <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+              <label for="mce-LNAME">Last Name</label>
+              <input type="text" value=""
+                name="{{ site.data.forms.mailchimp.fields.last_name.name }}" class=""
+                id="{{ site.data.forms.mailchimp.fields.last_name.id }}">
             </div>
           </div>
 
           <div class="mc-field-group">
-            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+            <label for="{{ site.data.forms.mailchimp.fields.email.id }}">
+              Email Address
+              <span class="asterisk">*</span>
             </label>
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            <input type="email" value=""
+              name="{{ site.data.forms.mailchimp.fields.email.name }}"
+              class="required email" required
+              id="{{ site.data.forms.mailchimp.fields.email.id }}">
+          </div>
+
+          <div class="mc-field-group">
+            <label>
+              <input type="checkbox"  value="1"
+                id="{{ site.data.forms.mailchimp.fields.potential_speaker.id }}"
+                name="{{ site.data.forms.mailchimp.fields.potential_speaker.name }}">
+              Tick here if you're interested in speaking at Python North East.
+            </label>
+
           </div>
 
           <div id="mce-responses" class="clear">
@@ -68,12 +92,11 @@ src="{{ "/assets/page.js" | relative_url }}">
 
   <div class="ending">
     <div class="container">
-      Need to get in touch with us?
-      <a href="{{ site.data.site.twitter }}" class="link">Send us a message on Twitter</a>
-      <br/>
-      <a href="https://pixabay.com/en/panorama-newcastle-upon-tyne-river-1327017/">Image on homepage by skeeze</a>
-      <br/>
-      <a href="//jsimpson.me">Site designed by Joe</a>
+      <h2>Need to get in touch with us?</h2>
+      <ul class="list-unstyled">
+        <li><a href="{{ site.data.site.twitter }}">Follow us on Twitter</a></li>
+        <li><a href="mailto:{{ site.data.site.contact_email }}">Send us an email</a></li>
+      </ul>
     </div>
   </div>
 
