@@ -22,9 +22,12 @@
 
 <div class="next-event box">
 	<div class="container">
-		{% assign post = site.posts.first %}			
+		{% assign post = site.posts.first %}
 		<div class="box-header">
-			<h2>Next Event {{ post.date | date:"%-d %b %Y" }}</h2>
+			<h2>
+				Next Event<br>
+				{{ post.date | date:"%A %-d %b %Y" }}
+			</h2>
 			<h3>{{ post.title }}</h3>
 		</div>
 		{{ post.excerpt }}
